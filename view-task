@@ -1,0 +1,8 @@
+def view_tasks():
+    if not tasks:
+        print("Danh sách trống.")
+        return
+
+    print("\n--- Danh sách công việc ---")
+    for i, task in enumerate(tasks, 1):
+        print(f"{i}. {task['content']} - {task['status']}")
