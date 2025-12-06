@@ -1,0 +1,7 @@
+def mark_task_done(index):
+    if index <= 0 or index > len(tasks):
+        print("Số thứ tự không hợp lệ.")
+        return
+
+    tasks[index - 1]["status"] = "Done"
+    print(f"Công việc {index} đã được đánh dấu hoàn thành.")
