@@ -1,0 +1,9 @@
+tasks = [] 
+
+def add_task(content):
+    task = {
+        "content": content,
+        "status": "Pending"
+    }
+    tasks.append(task)
+    print(f"Đã thêm công việc: {content}")
